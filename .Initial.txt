@@ -1,0 +1,8 @@
+1. install node.js
+2. install nvm (node version manager)
+
+nvm install 24.11.0 ( install a node.js version)
+nvm use 24.11.0 (use the installed version)
+nvm ls (list all installed versions)
+
+UNSTALL NODE.JS FIRST.
