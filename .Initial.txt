@@ -6,3 +6,10 @@ nvm use 24.11.0 (use the installed version)
 nvm ls (list all installed versions)
 
 UNSTALL NODE.JS FIRST.
+
+
+TypeScript
+----------------------------
+
+tsc test.ts => will create a javascript file
+tsc --init => will create config file, here all the configaration can be workable
