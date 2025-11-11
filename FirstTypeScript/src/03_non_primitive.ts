@@ -15,3 +15,26 @@ console.log(myWife);
 
 let myNameRoll : [string , number] = ["name", 123]; 
 console.log(myNameRoll)
+
+
+
+
+// object 
+const user = {
+    firstName: 'Mohammed',
+    middleName: 'Ashikur',
+    lastName: 'Rahaman',
+}
+console.log(user)
+
+// Giving optional property if middle part is empty
+const user2 : {
+    firstName: string,
+    middleName?: string,
+    lastName: string
+} = {
+    firstName: 'Mohammed',
+    // middleName: '',
+    lastName: 'Rahaman',
+}
+console.log(user2)
