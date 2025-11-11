@@ -13,3 +13,15 @@ TypeScript
 
 tsc test.ts => will create a javascript file
 tsc --init => will create config file, here all the configaration can be workable
+
+
+Module System?
+CommonJS (CJS) → older, Node.js default
+ES Modules (ESM) → modern, JavaScript standard (used in browsers and Next.js)
+
+
+"rootDir": "./src", => source code folder (TS)
+"outDir": "./dist", => output folder (JS)
+
+
+we added {} this breaket
