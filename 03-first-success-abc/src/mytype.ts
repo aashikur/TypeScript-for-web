@@ -7,3 +7,25 @@ const myfun = (a:number,b:number) => {
 }
 
 myfun(2,3);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
