@@ -1,17 +1,16 @@
 "use strict";
+// name can be change by user.name = 'Rifat';
+// but if used const user = {name: 'Rifat'}; then name can't be change
+// or use access modifier 'readonly'; then name can't be change
 Object.defineProperty(exports, "__esModule", { value: true });
-// object 
 const user = {
-    firstName: 'Mohammed',
-    middleName: 'Ashikur',
-    lastName: 'Rahaman',
+    organization: 'Google',
+    name: 'Ashik',
+    role: 'CEO', // Will give error
+    isMarried: true
 };
+// user.organization = 'Microsoft';  // Will give error
+user.name = 'Rifat';
+// user.role = 'CTO'; // Will give error
 console.log(user);
-// Giving optional property if middle part is empty
-const user2 = {
-    firstName: 'Mohammed',
-    // middleName: '',
-    lastName: 'Rahaman',
-};
-console.log(user2);
 //# sourceMappingURL=04_obj_literal_optional.js.map
