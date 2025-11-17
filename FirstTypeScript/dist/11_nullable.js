@@ -1,5 +1,6 @@
+"use strict";
 // nullable type
-
+Object.defineProperty(exports, "__esModule", { value: true });
 // const getUser = (input: string | null ) => {
 //     if(input) {
 //         console.log('user found ', input);
@@ -8,12 +9,9 @@
 //         console.log('User not found');
 //     }
 // }
-
 // getUser(null);
 // using input as null is nullable type
-
 // Unknown type
-
 // const cal = (input : unknown ) => { // error (no input working...)
 //     if(typeof input === "number"){
 //         console.log(input * 2);
@@ -26,17 +24,14 @@
 //         console.log("Unknown type");
 //     }
 // }
-
 // cal(100)
 // cal("100 TK")
 // cal(null)
-
-
-
 // Void
 // ======================================================================================
-const throwError = (msg: string):never => {
-    throw new Error (msg)
-}
-throwError("Error")
+const throwError = (msg) => {
+    throw new Error(msg);
+};
+throwError("Error");
 // ======================================================================================
+//# sourceMappingURL=11_nullable.js.map

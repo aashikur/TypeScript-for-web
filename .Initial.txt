@@ -25,3 +25,9 @@ ES Modules (ESM) → modern, JavaScript standard (used in browsers and Next.js)
 
 
 we added {} this breaket
+
+
+UPDATE :
+now src/file.ts => won't work
+when crate new ts file, => tsc => node dist/file.ts 
+Reason? now will run from javascript
