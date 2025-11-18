@@ -62,15 +62,6 @@ HELLO
 50
 false
 
-*/
-const formateValue = (value: string | number | boolean): string | number | boolean | undefined => {
-  if (typeof value === 'string') return value.toUpperCase();
-  if (typeof value === 'number') return value * 10;
-  if (typeof value === 'boolean') return !value;
-}
-
-/*
-
 
 
 
@@ -96,21 +87,7 @@ console.log(getLength([10, 20, 30, 40]));
 Sample Output:
 10
 4
-*/
 
-const getLength = (input: string | any[]): number => {
-  if (typeof input === 'string') return input.length;
-  if (Array.isArray(input)) return input.length;
-
-  const fallback: never = input;
-  return fallback;
-}
-
-
-
-
-
-/*
 ----------------------------------------------------------
 Problem 3:
 ----------------------------------------------------------
@@ -126,29 +103,6 @@ Sample Input:
 const person1 = new Person('John Doe', 30);
 console.log(person1.getDetails());
 
-
-'Name: John Doe, Age: 30';
-'Name: Alice, Age: 25';
-
-*/
-
-class Person {
-  name: string;
-  age: number;
-
-  constructor (name: string, age: number) {
-    this.name = name;
-    this.age = age;
-  }
-
-  getDetails() {
-    return `'Name: ${this.name}, Age: ${this.age}'`;
-  }
-}
-
-
-
-/*
 ----------------------------------------------------------
 Problem 4:
 ----------------------------------------------------------
@@ -173,21 +127,6 @@ Sample Output:
   { title: 'Book A', rating: 4.5 },
   { title: 'Book C', rating: 5.0 }
 ]
-*/
-
-interface Books {
-  title: string;
-  rating: number;
-}
-
-const filterByRating = (items : Books[]) : Books[] => {
-  return items.filter(item => item.rating >= 4);
-}
-
-
-
-
-/*
 
 ----------------------------------------------------------
 Problem 5:
@@ -206,22 +145,7 @@ Sample Output:
   { id: 1, name: 'Rakib', email: 'rakib@example.com', isActive: true },
   { id: 3, name: 'Rumi', email: 'rumi@example.com', isActive: true }
 ]
-*/
-interface Users {
-  id: number;
-  name: string;
-  email: string;
-  isActive: boolean;
-}
 
-const filterActiveUsers = (users : Users[]) : Users[] => {
-  return users.filter(users => users.isActive === true);
-}
-
-
-
-
-/*
 ----------------------------------------------------------
 Problem 6:
 ----------------------------------------------------------

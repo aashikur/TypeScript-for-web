@@ -1,47 +1,44 @@
+"use strict";
 /*
 - This solution.ts file is an example; replace it with your own code.
 - Use the same function names and parameter names as in the problem statement.
 - Write only the code inside the function bodies and return the result.
 - Do not use any console.log statements or comments.
 */
-
-const getSwallowVelocity = (type: 'african' | 'european'): string => {
-  if (type === 'african') {
-    return 'Roughly 11 meters per second.';
-  }
-  return "I... I don't know that!";
+Object.defineProperty(exports, "__esModule", { value: true });
+const getSwallowVelocity = (type) => {
+    if (type === 'african') {
+        return 'Roughly 11 meters per second.';
+    }
+    return "I... I don't know that!";
 };
-
-const isCatLiquid = (isAsleep: boolean, containerShape: string): boolean => {
-  return isAsleep && containerShape !== 'none';
+const isCatLiquid = (isAsleep, containerShape) => {
+    return isAsleep && containerShape !== 'none';
 };
-
 class Wizard {
-  name: string;
-  favoriteSpell: string;
-
-  constructor(name: string, favoriteSpell: string) {
-    this.name = name;
-    this.favoriteSpell = favoriteSpell;
-  }
-
-  castSpell(): string {
-    return `${this.name} casts ${this.favoriteSpell}!`;
-  }
+    name;
+    favoriteSpell;
+    constructor(name, favoriteSpell) {
+        this.name = name;
+        this.favoriteSpell = favoriteSpell;
+    }
+    castSpell() {
+        return `${this.name} casts ${this.favoriteSpell}!`;
+    }
 }
-/* 
+/*
 ==========================================================
                  Problem Solving with TypeScript
 ==========================================================
 
-This assignment is designed to assess your understanding of fundamental TypeScript concepts. 
-It includes a series of problems that cover topics such as types, functions, classes, 
+This assignment is designed to assess your understanding of fundamental TypeScript concepts.
+It includes a series of problems that cover topics such as types, functions, classes,
 interfaces, and array manipulation.
 
 ----------------------------------------------------------
 Problem 1:
 ----------------------------------------------------------
-Create a function formatValue that accepts a value which may 
+Create a function formatValue that accepts a value which may
 be a string, number, or boolean, and returns:
 
 - If string  → return uppercase
@@ -62,15 +59,6 @@ HELLO
 50
 false
 
-*/
-const formateValue = (value: string | number | boolean): string | number | boolean | undefined => {
-  if (typeof value === 'string') return value.toUpperCase();
-  if (typeof value === 'number') return value * 10;
-  if (typeof value === 'boolean') return !value;
-}
-
-/*
-
 
 
 
@@ -79,7 +67,7 @@ const formateValue = (value: string | number | boolean): string | number | boole
 ----------------------------------------------------------
 Problem 2:
 ----------------------------------------------------------
-Create a function getLength that accepts a string or array 
+Create a function getLength that accepts a string or array
 and returns its length.
 
 - If string → return number of chars
@@ -96,21 +84,7 @@ console.log(getLength([10, 20, 30, 40]));
 Sample Output:
 10
 4
-*/
 
-const getLength = (input: string | any[]): number => {
-  if (typeof input === 'string') return input.length;
-  if (Array.isArray(input)) return input.length;
-
-  const fallback: never = input;
-  return fallback;
-}
-
-
-
-
-
-/*
 ----------------------------------------------------------
 Problem 3:
 ----------------------------------------------------------
@@ -126,29 +100,6 @@ Sample Input:
 const person1 = new Person('John Doe', 30);
 console.log(person1.getDetails());
 
-
-'Name: John Doe, Age: 30';
-'Name: Alice, Age: 25';
-
-*/
-
-class Person {
-  name: string;
-  age: number;
-
-  constructor (name: string, age: number) {
-    this.name = name;
-    this.age = age;
-  }
-
-  getDetails() {
-    return `'Name: ${this.name}, Age: ${this.age}'`;
-  }
-}
-
-
-
-/*
 ----------------------------------------------------------
 Problem 4:
 ----------------------------------------------------------
@@ -173,21 +124,6 @@ Sample Output:
   { title: 'Book A', rating: 4.5 },
   { title: 'Book C', rating: 5.0 }
 ]
-*/
-
-interface Books {
-  title: string;
-  rating: number;
-}
-
-const filterByRating = (items : Books[]) : Books[] => {
-  return items.filter(item => item.rating >= 4);
-}
-
-
-
-
-/*
 
 ----------------------------------------------------------
 Problem 5:
@@ -206,22 +142,7 @@ Sample Output:
   { id: 1, name: 'Rakib', email: 'rakib@example.com', isActive: true },
   { id: 3, name: 'Rumi', email: 'rumi@example.com', isActive: true }
 ]
-*/
-interface Users {
-  id: number;
-  name: string;
-  email: string;
-  isActive: boolean;
-}
 
-const filterActiveUsers = (users : Users[]) : Users[] => {
-  return users.filter(users => users.isActive === true);
-}
-
-
-
-
-/*
 ----------------------------------------------------------
 Problem 6:
 ----------------------------------------------------------
@@ -237,7 +158,7 @@ Create a function printBookDetails(book: Book) → prints:
 ----------------------------------------------------------
 Problem 7:
 ----------------------------------------------------------
-Create a function getUniqueValues that accepts two arrays 
+Create a function getUniqueValues that accepts two arrays
 (strings or numbers) and returns a new array of unique values.
 
 ❗ You CANNOT use built-in methods (no Set, no includes, etc.)
@@ -289,11 +210,11 @@ Submission Guidelines
 - Must submit a GitHub repo with solution.ts + README.md
 - Deadline:
    60 marks → Nov 18 (before 11:59 PM)
-   50 marks → Nov 19     
+   50 marks → Nov 19
    30 marks → after Nov 19
 
 ==========================================================
 END OF ASSIGNMENT TEXT — WRITE YOUR SOLUTIONS BELOW
 ==========================================================
 */
-
+//# sourceMappingURL=solution%20copy.js.map

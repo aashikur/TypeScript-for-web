@@ -63,4 +63,30 @@ const myAccount = new BankAccount(1000);
 console.log(myAccount.balance);
 myAccount.deposite = -500;
 console.log(myAccount.balance);
+// Static members
+class Helper {
+    static PI = 3.14;
+    static area(radius) {
+        return Helper.PI * radius * radius;
+    }
+}
+class Shape {
+    name;
+    constructor(name) {
+        this.name = name;
+    }
+}
+class Square extends Shape {
+    side;
+    constructor(side) {
+        super("Square");
+        this.side = side;
+    }
+    area() {
+        return this.side * this.side;
+    }
+}
+const sq = new Square(5);
+console.log(sq.name); // Square
+console.log(sq.area()); // 25
 //# sourceMappingURL=test.js.map

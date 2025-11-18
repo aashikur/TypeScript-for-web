@@ -89,3 +89,25 @@ class Helper {
         return Helper.PI * radius * radius;
     }
 }
+
+
+
+
+
+abstract class Shape {
+  constructor(public name: string) {}
+  abstract area(): number; // must be implemented in subclass
+}
+
+class Square extends Shape {
+  constructor(public side: number) {
+    super("Square");
+  }
+  area() {
+    return this.side * this.side;
+  }
+}
+
+const sq = new Square(5);
+console.log(sq.name); // Square
+console.log(sq.area()); // 25
