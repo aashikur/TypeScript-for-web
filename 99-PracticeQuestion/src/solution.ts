@@ -222,17 +222,55 @@ const filterActiveUsers = (users : Users[]) : Users[] => {
 
 
 /*
-----------------------------------------------------------
-Problem 6:
-----------------------------------------------------------
-Define an interface Book:
-- title
-- author
-- publishedYear
-- isAvailable
 
-Create a function printBookDetails(book: Book) → prints:
-"Title: X, Author: Y, Published: Z, Available: Yes/No"
+## Problem 7:
+
+Create a function **getUniqueValues** that accepts two arrays and returns a new array containing only the unique values from both arrays, without any duplicates.
+
+### Requirements:
+
+- You must write the correct type for the function parameter and the return type.
+- The function should handle arrays of strings or numbers.
+- You are not allowed to use any built-in methods to solve this problem.
+
+### Sample Input:
+
+```ts
+const array1 = [1, 2, 3, 4, 5];
+const array2 = [3, 4, 5, 6, 7];
+console.log(getUniqueValues(array1, array2));
+```
+
+### Sample Output:
+
+```ts
+[1, 2, 3, 4, 5, 6, 7];
+
+
+```
+
+
+
+*/
+
+
+
+
+
+
+
+
+/*
+
+
+
+
+
+
+
+
+
+
 
 ----------------------------------------------------------
 Problem 7:
