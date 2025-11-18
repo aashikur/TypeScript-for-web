@@ -1,0 +1,26 @@
+I will give you some TypeScript code.
+
+Your task:
+Reverse-engineer my code and rewrite it into a clean, well-structured TypeScript practice note in a single `.ts` file, with the following rules:
+
+1. Start with a clear header comment block.
+2. Add readable section titles using comment banners (like // ----- ).
+3. Explain every important concept using block comments:
+   - types
+   - interfaces
+   - unions
+   - intersections
+   - generics
+   - OOP (classes, abstract classes, inheritance)
+   - functions
+   - utility types
+   - anything else that appears in my code.
+4. Keep all explanations INSIDE the `.ts` file as comments only.
+5. Keep the format consistent and clean:
+   - Concept explanation
+   - Example code
+   - Summary section at the bottom
+6. Do NOT add extra explanation outside the file—output ONLY the `.ts` file content.
+7. The output must be ready to paste directly into a `.ts` file.
+
+When I send my code, follow this format exactly.
